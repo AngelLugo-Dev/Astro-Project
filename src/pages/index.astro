@@ -14,9 +14,24 @@ const title = 'Astro project';
 	</head>
 	<body>
 		<h1>{name}</h1>
-		<p>momento actual: {new Date().toLocaleTimeString()}</p>
+		<p id="current-time">momento actual: </p>
 		<footer>
-			{new Date().getFullYear()}
+			año: 2023
 		</footer>
+		<script>
+			//Client only
+			const footer = document.querySelector('footer') as HTMLElement;
+			const currentTimeParagraph = document.querySelector(
+				'#current-time'
+			) as HTMLParagraphElement;
+
+			
+			const currentYear: number = new Date().getFullYear();
+
+			footer.innerText = `año: ${currentYear}`;
+			currentTimeParagraph.innerText = `Momento actual real: ${ new Date().toLocaleTimeString() }`;
+
+			//
+		</script>
 	</body>
 </html>
