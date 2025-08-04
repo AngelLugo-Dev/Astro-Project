@@ -1,16 +1,14 @@
 ---
+import Navbar from "./components/Navbar.astro";
+import MainLayouts from "./layouts/MainLayouts.astro";
+
 
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<!--quite el meta generator por temas de seguridad basado en la version del frameworck -->
-		<title>about</title>
-	</head>
-	<body>
-		<h1>about</h1>
-	</body>
-</html>
+<MainLayouts title="About Page">
+	<h1>About</h1>
+	<style>
+		h1 {
+			color: blue;
+		}
+	</style>
+</MainLayouts>
