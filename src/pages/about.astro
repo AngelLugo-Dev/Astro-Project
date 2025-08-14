@@ -1,13 +1,12 @@
 ---
-import CustomTitle from "./components/CustomTitle.astro";
-import Navbar from "./components/Navbar.astro";
-import MainLayouts from "./layouts/MainLayouts.astro";
+import Navbar from "../components/Navbar.astro";
+import MainLayouts from "../layouts/MainLayouts.astro";
 
 
 ---
 <MainLayouts title="About Page">
 	<h1>About</h1>
-	<CustomTitle title="this iss the title" />
+
 	<style is:global>
 		h1 {
 			color: blue;
